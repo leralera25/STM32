@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Электронное учебно-методическое пособие</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/vars.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/responsive.css" />
+    <link rel="stylesheet" href="../styles/modal.css">
+    <script src="../vars.js" defer></script>
+    <script src="../script.js" defer></script>
+  </head>
+  <body>
+
+    <header>
+      <nav>
+        <a href="../index.html" class="logo">STM32</a>
+        <ul class="nav-links">
+          <li class="link_item"><a href="../index.html" class="link">Теория</a></li>
+          <li class="link_item"><a href="./test.html" class="link">Тесты</a></li>
+          <li class="link_item"><a href="./labs.html" class="link">Лабораторные</a></li>
+        </ul>
+        <div class="burger">
+           
+        </div>
+    </nav>
+    </header>
+
+    <main>
+        <div class="container">
+          <h1>Видеоматериалы</h1>
+          <h3>Автор: ФРТК МФТИ<br/>Лекции читает: Эдгар Казиахмедов</h3>
+          <div class="items">
+            <button onclick="openModal(0, videos)" class="item"><span>Видео № 1</span><span>Вводная лекция</span></button>
+            <button onclick="openModal(1, videos)" class="item"><span>Видео № 2</span><span>Сборка первого проекта</span></button>
+            <button onclick="openModal(2, videos)" class="item"><span>Видео № 3</span><span>Ядро Cortex-M0</span></button>
+            <button onclick="openModal(3, videos)" class="item"><span>Видео № 4</span><span>Система тиктирования и сброса</span></button>
+            <button onclick="openModal(4, videos)" class="item"><span>Видео № 5</span><span>Порты ввода-вывода</span></button>
+          </div>
+
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="modal-head">
+                <h2 id="modalTitle">Модальное окно</h2>
+                <span class="close" onclick="closeModal()">&times;</span>
+              </span>
+              
+              <div id="modalContent">Содержимое модального окна.</div>
+            </div>
+          </div>
+    </main>
+
+
+  </body>
+</html>

@@ -1,0 +1,160 @@
+/* Обнуляющие стили */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  background-color: var(--mainColor);
+  cursor: default;
+}
+
+/* Стили для контейнера */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 150px 20px;
+}
+
+/* Навигация */
+
+nav {
+  padding: 20px;
+  position: fixed;
+  z-index: 2352352;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  background-color: var(--secondColor);
+}
+
+nav .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+nav ul li:hover {
+  text-decoration: underline;
+}
+
+/* Бургер меню */
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #000000;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Стили для футера */
+
+footer {
+  background: var(--mainColor);
+  padding: 20px;
+}
+
+footer p {
+  font-size: 14px;
+  text-align: center;
+}
+
+
+
+/* Аккордеон */
+.accordion {
+  padding: 5% 0 1% 0;
+  overflow: hidden;
+}
+.accordion-item {
+  border-bottom: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: all 0.5s;
+}
+.accordion-header:hover {
+  background-color: white;
+}
+.accordion-header {
+  padding: 10px;
+  background-color: var(--secondColor);
+  cursor: pointer;
+}
+.accordion-content {
+  padding: 10px;
+  background-color: #fff;
+  display: none;
+}
+.accordion-content h2 {
+  text-align: center;
+}
+.accordion-content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.accordion-item.active .accordion-content {
+  display: block;
+}
+
+
+/* Сетка */
+.items {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.item {
+  text-decoration: none;
+  color: black;
+  flex-basis: calc(50% - 20px);
+  height: 100px;
+  width: 200px;
+  background-color: var(--secondColor);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.item span {
+  text-align: center;
+}
+
+.item:hover {
+  background-color: white;
+  cursor: pointer;
+}

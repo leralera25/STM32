@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Электронное учебно-методическое пособие</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/vars.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/modal.css" />
+    <script src="../script.js" defer></script>
+    <script src="../vars.js"></script>
+  </head>
+  <body>
+
+    <header>
+      <nav>
+        <a href="../index.html" class="logo">STM32</a>
+        <ul class="nav-links">
+          <li class="link_item"><a href="../index.html" class="link">Теория</a></li>
+          <li class="link_item"><a href="./labs.html" class="link">Лабораторные</a></li>
+          <li class="link_item"><a href="./videos.html" class="link">Видеоматериалы</a></li>
+        </ul>
+        <div class="burger">
+           
+        </div>
+    </nav>
+    </header>
+
+    <main>
+        <div class="container">
+          <h1>Тесты</h1>
+          <div class="items">
+            <button onclick="openModal(0, tests)" class="item"><span>STM32</span><span>Общие вопросы</span></button>
+            <button onclick="openModal(1, tests)" class="item"><span>Система тактирования</span><span>Частоты</span></button>
+            <button onclick="openModal(2, tests)" class="item"><span>Генераторы тактового сигнала</span><span>Виды, частоты</span></button>
+          </div>
+
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="modal-head">
+                <h2 id="modalTitle">Модальное окно</h2>
+                <span class="close" onclick="closeModal()">&times;</span>
+              </span>
+              
+              <div id="modalContent">Содержимое модального окна.</div>
+            </div>
+          </div>
+    </main>
+
+  </body>
+</html>
